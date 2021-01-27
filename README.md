@@ -1,5 +1,8 @@
 # Coniunctio
-Code snippets and saves from the latest album [Coniuntio](https://unifactor.bandcamp.com/album/coniunctio)
+ > Coniunctio. Literally, “conjunction,” used in alchemy to refer to chemical combinations; psychologically, it points to the union of opposites and the birth of new possibilities.
+
+Code snippets and saves from the latest album [Coniunctio](https://unifactor.bandcamp.com/album/coniunctio)
+
 
 ## EXP-Series
 Four of the album tracks are titled 'exp x' and were originally slated for a release with Experimedia.  Most of these tracks are sparce were designed to pair with audio-visual performances with [REW](https://vimeo.com/rewmedia).  My favorite of these tracks (the four found on the album) have been making appearances in Spednar live sets for a while.  Included is code related to the original tracks.
