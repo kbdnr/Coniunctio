@@ -1,0 +1,30 @@
+bpm 20
+
+bpm 40
+
+bpm 80
+
+d1 $ every 3 ((density 8) . (# delay "0.4")) $ sometimes (# up "3 5 6 7") $ s "[lfglitch:3, ~ chimes]"
+   # speed (rand)
+   # delay "0.0"
+   # delayfeedback "0.6"
+   # cut "2"
+
+d2 $ slow 2 $ every 8 (stut 4 1.3 0.25) $ sometimes (2 <<~) $ every 5 (0.125 ~>) $ sometimes (density 2 . rev . degradeBy 0.6) $ 
+   every 3 (# speed "0.7") $ s "[xxlcp:9(3,8), ~ ~ xxlsn:6, ~ xxlhtc:7*5, xxlbd:3]"
+   # cut "3"
+
+d3 $ s "[lighter*13?]"
+   # n (irand 8)
+   # cut "4"
+
+d4 $ sometimes ((# speed "0.7") . (# delay "0.3")) $ slow 5 $ s "akaipads:17"
+   # cut "5"
+   # gain "0.70"
+
+d5 $ retrig $ slow 3 $ s "ywamen4*24"
+   # n (run 16)
+   # gain "1.2"
+   # cut "3"
+
+m1 $ silence

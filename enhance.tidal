@@ -1,0 +1,21 @@
+bpm 40
+
+--1
+d1 $ every 3 (fast 3 . degradeBy 0.6 . (# enhance rand)) $
+   sometimes (0.25 <~) $
+   sometimes (0.125 <~) $
+   rarely (# coarse "2 3 4 5") $
+   sometimes (# speed "{1 2 3 4 5 6}%8") $ 
+   every 6 ((# s "[superpwm, superchip]") . (# n "0 -12 -24 12") . (# voice "1 2 3 4") . (# sustain "0.1 0.5")) $
+   every 4 (# smear sine) $
+   every 10 ((slow 10) . (# s "[laz*10]") . (# speed "-1 2 4 0.5 0.25 0.125 0.2")) $
+   every 3 (slow 10 . rev . jux (iter 4) . (#(slow 4 $ crush (range 12 2 sine)))) $
+   sometimes ((0.125 ~>) . (# speed "-1 2 -0.5 0.25") . juxBy 0.3 (iter 4)) $
+   s "[gabba*8?]"
+   # n (irand 10)
+   # (slow 20 $ room (range 0.05 0.5 sine))
+   # size "0.2"
+   # (slow 4 $ delay (range 0.02 0.2 sine))
+   # (slow 10 $ delayfeedback (range 0.02 0.2 sine))
+   # (slow 15 $ cps (range 1.4 0.8 sine))
+
